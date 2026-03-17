@@ -1,5 +1,5 @@
 
-# Home Automation System Using ESP32
+# Home Automation System Using ESP8266
 
 ## This project implements a smart home automation system using the ESP32 microcontroller, a versatile and cost-effective IoT development platform. The system provides seamless control over various household appliances and systems remotely through a mobile application 
 
