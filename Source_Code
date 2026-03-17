@@ -6,7 +6,7 @@ The system provides seamless control over various household appliances and syste
 #define BLYNK_TEMPLATE_NAME "Home Automation"
 #define BLYNK_AUTH_TOKEN "oA8dUhzQfoFEicE85nYCT0PqUXJVj6ST"
 
-// Comment this out to disable prints and save space
+
 #define BLYNK_PRINT Serial
 
 
@@ -15,9 +15,6 @@ The system provides seamless control over various household appliances and syste
 #include <BlynkSimpleEsp32.h>
 
 char auth[] = BLYNK_AUTH_TOKEN;
-
-// Your WiFi credentials.
-// Set password to "" for open networks.
 char ssid[] = "Wokwi-GUEST";
 char pass[] = "";
 
@@ -47,8 +44,7 @@ int relay4_state = 0;
 #define button4_vpin    V4
 
 //------------------------------------------------------------------------------
-// This function is called every time the device is connected to the Blynk.Cloud
-// Request the latest state from the server
+
 BLYNK_CONNECTED() {
   Blynk.syncVirtual(button1_vpin);
   Blynk.syncVirtual(button2_vpin);
@@ -57,8 +53,7 @@ BLYNK_CONNECTED() {
 }
 
 //--------------------------------------------------------------------------
-// This function is called every time the Virtual Pin state change
-//i.e when web push switch from Blynk App or Web Dashboard
+
 BLYNK_WRITE(button1_vpin) {
   relay1_state = param.asInt();
   digitalWrite(relay1_pin, relay1_state);
@@ -118,10 +113,6 @@ void loop()
 {
   Blynk.run();
   timer.run();
-  // You can inject your own code or combine it with other sketches.
-  // Check other examples on how to communicate with Blynk. Remember
-  // to avoid delay() function!
-  
   listen_push_buttons();
 }
 
