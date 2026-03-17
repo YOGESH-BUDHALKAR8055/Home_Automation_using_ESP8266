@@ -1,13 +1,7 @@
-**Name:**    Yogesh Prabhakar Budhalkar
-**Company:** CODTECH IT SOLUTIONS
-**ID:**      CT08DS344
-**Domain:**  Embedded Systems
-**Duration:** December to January 2025
-**Mentor:**   SRAVANI GOUNI
 
-Home Automation System Using ESP32
+# Home Automation System Using ESP32
 
-This project implements a smart home automation system using the ESP32 microcontroller, a versatile and cost-effective IoT development platform. The system provides seamless control over various household appliances and systems remotely through a mobile application 
+## This project implements a smart home automation system using the ESP32 microcontroller, a versatile and cost-effective IoT development platform. The system provides seamless control over various household appliances and systems remotely through a mobile application 
 
 Key Features:
 Remote Appliance Control: Turn lights, fans, and other appliances on or off using a smartphone app or web interface
